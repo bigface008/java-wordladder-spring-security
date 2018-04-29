@@ -17,7 +17,7 @@ public class App {
 
     @RequestMapping(value = "/app",method = RequestMethod.GET)
     public String say(String[] args) throws IOException {
-            WordLadder map = new WordLadder("dictionary.txt", 3);
+            WordLadder map = new WordLadder("src/main/resources/dictionary.txt", 3);
             return map.ladder("dog", "cat");
     }
 }
